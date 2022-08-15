@@ -14,7 +14,7 @@ if user_choice == 'y':
     os.system('cls')
 
     print()
-    print(' --- GitHub Repository: https://github.com/Henrique-Coder')
+    print(' --- GitHub Repository: https://github.com/Henrique-Coder/scheduled-shutdown')
     print(' # How soon will the computer shut down?')
     print(' Examples: 1m, 60s')
     print()
