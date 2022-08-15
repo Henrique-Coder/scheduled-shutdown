@@ -1,9 +1,10 @@
-import os
-import subprocess
+from os import system
+from sys import exit
+from subprocess import call
 
 
-subprocess.call(["shutdown", "/a"])
-os.system('cls')
+call(["shutdown", "/a"])
+system('cls')
 
 print()
 print(' --- App: Scheduled Shutdown')
@@ -11,7 +12,7 @@ print(' # Do you want to continue?')
 print()
 user_choice = input(' $ [y/n] > ').lower()
 if user_choice == 'y':
-    os.system('cls')
+    system('cls')
 
     print()
     print(' --- GitHub Repository: https://github.com/Henrique-Coder/scheduled-shutdown')
@@ -28,10 +29,10 @@ if user_choice == 'y':
     elif letter == 'm':
         seconds = number * 60
     else:
-        quit()
+        exit()
 
-    subprocess.call(["shutdown", "/s", "/t", str(seconds)])
-    quit()
+    call(["shutdown", "/s", "/t", str(seconds)])
+    exit()
 
 else:
-    quit()
+    exit()
